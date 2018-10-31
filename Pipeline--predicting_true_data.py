@@ -95,13 +95,17 @@ def h2o_pred(test):
     saved_model = h2o.load_model(os.getcwd()+"/XGBoost")
     preds = saved_model.predict(h2oTest)
     preds = preds.as_data_frame()
+    print(saved_model.model_performance(h2oTest))
+    print("========================================================")
+    print("saving prediction into csv file")
     preds.to_csv("test_predict.csv")
-    
+  
+aml.leader.model_performance(h2oTest)  
 
 h2o_pred(df)
 print("prediction is done. Saved in the current directory")
 print("")
-print("the csv file is test_predict.csv")
+print("the csv file is called test_predict.csv")
 print("done")
 
 
