@@ -32,6 +32,7 @@ Xinyu Zhang
 * y_test.pickle
 * data.xlsx
 * processed_data.pickle
+* synthesis_data_withsalry.csv
 * demo.csv (demo for Xgboost Pipeline)
 * test_predict.csv(if you run Xgboost Pipeline)
 
@@ -74,6 +75,10 @@ Put the notebooks and the original data in the same directory, and run the noteb
   6. Prediction_Model.ipynb
   7. Synthesis_Evaluation.ipynb
   8. `$python Pipeline--predicting_true_data.py -f demo.xlsx` on shell/terminal.
+  
+## IV. Video Presentation
+https://www.youtube.com/watch?v=FK4TaVvxgtQ
+
  
  
 

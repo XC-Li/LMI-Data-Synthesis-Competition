@@ -2,3 +2,5 @@
 .ipynb_checkpoints/
 ~$data.xlsx
 .DS_Store
+*.mp4
+synthesis_data_withsalry.csv
