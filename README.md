@@ -1,10 +1,22 @@
 # LMI-Data-Synthesis-Competitipon
+[Competition Page](https://www.ncsi.com/event/dcdatacon/hackathon/)  
+[Link of this project on GitHub](https://github.com/XC-Li/LMI-Data-Synthesis-Competition)  
+## Group members
+*All of us come from GWU Data Science Program*  
 
-1.	Eda，Preprocessing (George) --Working
-2.	Simple imputation(Mandy)
-3.	Splitting training and validation
-4.	Synthesis data (Mandy)
-5.	Feature engineering
-6.	Feature selection
-7.	Build model (George)  --Working
-8.	Output report/video
+Shen Luo  
+Xiaochi Li  
+Xinyu Zhang  
+Xiaoqian Sun  
+
+## Usage of the code:
+
+1. For evaluation the performance of our model :  
+ Just load your test data in "Synthesis_Evaluation.ipynb" as X_test and y_test, and run that notebook.
+ 
+2. For reproduction of our work:  
+ Put the notebooks and the original data in the same directory, and run the notebook in the following order:
+ 1. Preprocessing.ipynb
+ 2. Prediction_Model.ipynb
+ 3. xxx.ipynb
+ 4. Synthesis_Evaluation.ipynb
