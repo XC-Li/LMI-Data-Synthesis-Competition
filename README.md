@@ -11,7 +11,8 @@ Xiaoqian Sun
 
 ## Usage of the code:
 
-1. For evaluation the performance of our model :  
+1. For evaluation the performance of our model : 
+ Our model is saved in "prediction_model.pickle"
  Just load your test data in "Synthesis_Evaluation.ipynb" as X_test and y_test, and run that notebook.
  
 2. For reproduction of our work:  
