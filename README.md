@@ -25,6 +25,6 @@ Put the notebooks and the original data in the same directory, and run the noteb
 ### 3. For grader using your own data:
   1. You may use XgBoost model.
   2. To run it, open your shell/terminal, in the currect directory, type: `python Pipeline--predicting_true_data.py -f XXX.xlsx`. `XXX.xlsx` or `XXX.csv` is the original data you want to test on our model. 
-    * DON'T FORGET type your file path if you are in differnet directory. 
+    * DON'T FORGET type your file path if the data is in differnet directory.* 
   3. The final evaluation will show on your shell/terminal
   4. The prediction of `Salary` will be saved as `test_predict.csv`. Then you can compare it with your real data. 
