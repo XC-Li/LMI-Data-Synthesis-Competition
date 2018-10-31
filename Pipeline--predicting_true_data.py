@@ -44,7 +44,11 @@ from h2o.automl import H2OAutoML
 
 # read data
 def reading_data(file_name):
-    df = pd.read_excel(file_name,thousands=",") #seperations in thousands
+    if file_name.endswith(".csv"):
+
+        df = pd.read_csv(file_name) 
+    else:
+        df = pd.read_excel(file_name,thousands = ",") #seperations in thousands
     # remove features:
     categotical_features = ["e_type", "benefit", "Time", "p_grade"]
     not_include_features = ["MOU", "MOU Title", "Title", "Department", "Record Number", "POBP"]
@@ -100,7 +104,8 @@ def h2o_pred(test):
     print("saving prediction into csv file")
     preds.to_csv("test_predict.csv")
   
-aml.leader.model_performance(h2oTest)  
+#saved_model.model_performance(h2oTest)  
+
 
 h2o_pred(df)
 print("prediction is done. Saved in the current directory")

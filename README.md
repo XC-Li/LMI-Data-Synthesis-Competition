@@ -7,7 +7,7 @@
 Shen Luo  
 Xiaochi Li  
 Xinyu Zhang  
-Xiaoqian Sun  
+
 
 ## Usage of the code:
 
@@ -17,7 +17,15 @@ Xiaoqian Sun
  
 2. For reproduction of our work:  
  Put the notebooks and the original data in the same directory, and run the notebook in the following order:
- 1. Preprocessing.ipynb
- 2. Prediction_Model.ipynb
- 3. xxx.ipynb
- 4. Synthesis_Evaluation.ipynb
+ 
+  1. Preprocessing.ipynb
+  2. Prediction_Model.ipynb
+  3. xxx.ipynb
+  4. Synthesis_Evaluation.ipynb
+ 
+3. For grader using your own data:
+  1. You may use XgBoost model.
+  2. To run it, open your shell/terminal, in the currect directory, type: `python Pipeline--predicting_true_data.py -f XXX.xlsx 
+`. XXX.xlsx or XXX.csv is the original data you want to test on our model. 
+  3. The final result will show on your shell/terminal
+  4. The prediction of `Salary` will be saved as `test_predict.csv`. Then you can compare it with your real data. 
