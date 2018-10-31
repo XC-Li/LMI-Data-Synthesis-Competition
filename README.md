@@ -9,7 +9,7 @@ Xiaochi Li
 Xinyu Zhang  
 
 
-## IDescription of files:
+## Description of files:
 
 ### 1. Code files: 
 1. XGboost model:
@@ -32,6 +32,7 @@ Xinyu Zhang
 * y_test.pickle
 * data.xlsx
 * processed_data.pickle
+* demo.csv (demo for Xgboost Pipeline)
 * test_predict.csv(if you run Xgboost Pipeline)
 
 ### 3. Presentation:
@@ -67,6 +68,12 @@ Our model is saved in "prediction_model.pickle". Just load your test data in "Sy
 Put the notebooks and the original data in the same directory, and run the notebook in the following order:
   1. Preprocessing.ipynb
   2. Prediction_Model.ipynb
-  3. xxx.ipynb
-  4. Synthesis_Evaluation.ipynb
+  3. Data_synthesis.ipynb
+  4. 3Dvisualization.py
+  5. H2O_Xgboost.ipynb
+  6. Prediction_Model.ipynb
+  7. Synthesis_Evaluation.ipynb
+  8. `$python Pipeline--predicting_true_data.py -f demo.xlsx` on shell/terminal.
  
+ 
+
